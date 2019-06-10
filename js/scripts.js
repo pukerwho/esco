@@ -35,6 +35,19 @@ $(window).scroll(function(){
   }
 })
 
+var checkFirstSlide = function(){
+  var ref = $('.puk-slide').first().attr("data-section-name");
+  console.log(ref);
+  if(ref==="dark") {
+    $(".header").removeClass("light-header");
+  }
+  if(ref==="light") {
+    $(".header").addClass("light-header");
+  } 
+}
+
+checkFirstSlide();
+
 $.scrollify({
   section : ".puk-slide",
   easing: "easeOutExpo",
@@ -61,8 +74,10 @@ $('.counter').counterUp({
 });
 
 heightHeader = ($('.header').outerHeight() + 20);
-heightIngiDetail = $('.b_ingi-detail').height();
-console.log(heightHeader);
-offsetTopIngiTitle = $('.b_ingi-title').offset().top;
-$('.b_ingi-detail').css({'top':heightHeader});
-$('.b_ingi .esco-line').css({'margin-bottom':heightIngiDetail/2})
+if ($('.b_ingi-detail').length > 0) {
+  heightIngiDetail = $('.b_ingi-detail').height();
+  console.log(heightHeader);
+  offsetTopIngiTitle = $('.b_ingi-title').offset().top;
+  $('.b_ingi-detail').css({'top':heightHeader});
+  $('.b_ingi .esco-line').css({'margin-bottom':heightIngiDetail/2})  
+}

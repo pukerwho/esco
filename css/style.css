@@ -9988,7 +9988,7 @@ a:hover {
   -ms-flex-direction: column;
   flex-direction: column;
   color: #ffffff;
-  padding: 50px 0; }
+  padding: 150px 0 50px 0; }
   .b_audit-whyus:after {
     content: '';
     width: 100%;
@@ -10068,7 +10068,7 @@ a:hover {
   -ms-flex-direction: column;
   flex-direction: column;
   color: #3c3c3c;
-  padding: 50px 0; }
+  padding: 150px 0 50px 0; }
   .b_audit-building:after {
     content: '';
     width: 100%;
@@ -10168,7 +10168,7 @@ a:hover {
   -ms-flex-direction: column;
   flex-direction: column;
   color: #ffffff;
-  padding: 50px 0; }
+  padding: 150px 0 50px 0; }
   .b_audit-teplo:after {
     content: '';
     width: 100%;
@@ -10238,7 +10238,7 @@ a:hover {
   -ms-flex-direction: column;
   flex-direction: column;
   color: #3c3c3c;
-  padding: 50px 0; }
+  padding: 150px 0 50px 0; }
   .b_podryad-welcome:after {
     content: '';
     width: 100%;

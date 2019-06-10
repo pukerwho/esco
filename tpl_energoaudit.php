@@ -36,7 +36,7 @@ Template Name: Энергоаудит
 								<div class="esco-list__item-title">
 									Энергоаудит зданий и предприятий
 								</div>
-								<a href="/#audit_building">
+								<a href="#audit_building">
 									<div class="esco-button">
 										Подробнее
 									</div>
@@ -51,7 +51,7 @@ Template Name: Энергоаудит
 								<div class="esco-list__item-title">
 									Энергоаудит систем теплоснабжения городов/учреждений
 								</div>
-								<a href="/#audit_teplo">
+								<a href="#audit_teplo">
 									<div class="esco-button">
 										Подробнее
 									</div>

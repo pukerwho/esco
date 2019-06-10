@@ -60,9 +60,11 @@ Template Name: Main
 								<div class="b_uslugi-item__title">
 									Оказываем инжиниринговые услуги
 								</div>
-								<div class="esco-button">
-									Подробнее
-								</div>
+								<a href="#ingi">
+									<div class="esco-button">
+										Подробнее
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -156,9 +158,11 @@ Template Name: Main
 								<div class="b_energoeffect-item__text">
 									Использование возобновляемых источников энергии в энергоэффективности
 								</div>
-								<div class="esco-button">
-									Подробнее
-								</div>
+								<a href="<?php echo get_page_url('tpl_vie') ?>">
+									<div class="esco-button">
+										Подробнее
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -223,9 +227,11 @@ Template Name: Main
 								<div class="b_ingi-item__text">
 									Подрядные работы
 								</div>
-								<div class="esco-button">
-									Подробнее
-								</div>
+								<a href="<?php echo get_page_url('tpl_podryad') ?>">
+									<div class="esco-button">
+										Подробнее
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>

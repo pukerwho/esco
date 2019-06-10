@@ -9246,7 +9246,7 @@ a:hover {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 50px 0; }
+  padding: 150px 0 50px 0; }
   .b_uslugi:after {
     content: '';
     width: 100%;

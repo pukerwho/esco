@@ -6,6 +6,7 @@ jQuery(document).ready(function($){
   $('.b_audit-welcome-description').addClass('esco-fade');
   $('.b_audit-welcome .esco-list__item').addClass('esco-fade');
   $('.b_audit-welcome .esco-detail-right').addClass('animate-active');
+  $('.b_podryad-welcome .esco-detail-right').addClass('animate-active');
 })
 
 //Плавный скролл

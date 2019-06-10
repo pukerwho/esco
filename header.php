@@ -25,9 +25,11 @@
       <div class="row">
         <div class="col-md-12">
           <div class="header__content">
-            <div class="header__logo">
-              <img src="<?php bloginfo('template_url') ?>/img/logo.png" alt="">
-            </div>
+            <a href="<?php echo home_url(); ?>">
+              <div class="header__logo">
+                <img src="<?php bloginfo('template_url') ?>/img/logo.png" alt="">
+              </div>
+            </a>
             <?php wp_nav_menu([
               'theme_location' => 'head_menu',
               'container' => 'nav',

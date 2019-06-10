@@ -9,7 +9,7 @@ jQuery(document).ready(function($){
 })
 
 //Плавный скролл
-$(document).on('click', '.header a[href^="#"]', function (event) {
+$(document).on('click', 'a[href^="#"]', function (event) {
   event.preventDefault();
   var target = $($.attr(this, 'href'));
   var targetScroll =  target.offset().top;

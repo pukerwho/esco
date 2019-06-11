@@ -11632,16 +11632,18 @@ button.swiper-pagination-bullet {
       width: 40px;
       height: 2px;
       display: inline-block;
-      background-color: #93bf1f;
+      background-color: #ea622f;
       -webkit-transition: all 0.4s;
       -o-transition: all 0.4s;
       transition: all 0.4s;
       z-index: 2; }
       .mobile-menu span:nth-of-type(2) {
-        margin-top: 0.5rem; }
+        margin-top: 0.5rem;
+        background-color: #3faae1; }
       .mobile-menu span:nth-of-type(3) {
         width: 20px;
-        margin-top: 0.5rem; }
+        margin-top: 0.5rem;
+        background-color: #f7b232; }
     .mobile-menu__active span:first-of-type {
       background-color: #494c4b;
       -webkit-transform: translateY(5px) rotate(-45deg);

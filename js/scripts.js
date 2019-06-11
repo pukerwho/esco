@@ -31,6 +31,17 @@ $('.mobile-menu').on('click', function(e) {
   $('body').toggleClass('modal-open');
 });
 
+if ($(document).width() < 992) {
+  $(window).scroll(function(){
+    var h_scroll = $(this).scrollTop();
+    if (h_scroll > 100) {
+      $('.header__logo').fadeOut();
+    } else {
+      $('.header__logo').fadeIn();
+    }
+  })
+}
+
 //Плавный скролл
 $(document).on('click', 'a[href^="#"]', function (event) {
   event.preventDefault();

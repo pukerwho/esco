@@ -9135,6 +9135,8 @@ b {
     .header__menu a {
       color: #ffffff;
       font-size: 18px;
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
       -webkit-transition: all 0.5s 0.3s;
       -o-transition: all 0.5s 0.3s;
       transition: all 0.5s 0.3s;
@@ -9151,6 +9153,13 @@ b {
     -webkit-transition: all 0.5s 0.3s;
     -o-transition: all 0.5s 0.3s;
     transition: all 0.5s 0.3s; }
+    .header.light-header a:hover {
+      background-color: #eaf5ef;
+      -webkit-border-radius: 17.5px;
+      border-radius: 17.5px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
 
 @font-face {
   font-family: 'Helvetica-Bold';

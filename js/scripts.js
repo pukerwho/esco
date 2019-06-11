@@ -13,7 +13,23 @@ jQuery(document).ready(function($){
   $('.b_contract-welcome__icons').addClass('esco-fade');
   $('.b_contract-welcome .esco-line').addClass('esco-fade');
   $('.b_contract-welcome__bottom').addClass('esco-fade');
+  $('.b_proect-welcome__title').addClass('esco-fade');
+  $('.b_proect-welcome__description').addClass('esco-fade');
+  $('.b_proect-welcome .esco-line').addClass('esco-fade');
+  $('.b_proect-welcome-list__item').addClass('esco-fade');
+  $('.b_proect-welcome .esco-detail-right').addClass('animate-active');
+  $('.b_vie-welcome__title').addClass('esco-fade');
+  $('.b_vie-welcome .esco-line').addClass('esco-fade');
+  $('.b_vie-welcome__description').addClass('esco-fade');
+  $('.b_vie-welcome__item').addClass('esco-fade');
 })
+
+$('.mobile-menu').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('mobile-menu__active');
+  $('.mobile-cover').toggleClass('mobile-cover__open');
+  $('body').toggleClass('modal-open');
+});
 
 //Плавный скролл
 $(document).on('click', 'a[href^="#"]', function (event) {

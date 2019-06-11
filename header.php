@@ -48,4 +48,14 @@
       </div>
     </div>
   </header>
+  <div class="mobile-show">
+    <div class="mobile-cover">
+      <?php wp_nav_menu([
+        'theme_location' => 'head_menu',
+        'container' => 'nav',
+        'container_class' => 'header__menu',
+        'menu_id' => 'head_menu',
+      ]); ?>  
+    </div>
+  </div>
   <section id="content" role="main">

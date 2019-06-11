@@ -80,7 +80,7 @@ Template Name: ВИЭ
 			<div class="row justify-content-center">
 				<div class="col-md-11">
 					<div class="b_vie-solutions__grid">
-						<div class="b_vie-solutions__item animate-puk" data-effect="fade" data-daley="0.9s">
+						<div class="b_vie-solutions__item animate-puk" data-effect="fade" data-delay="0.9s">
 							<div class="b_vie-solutions__item-img">
 								<img src="<?php bloginfo('template_url') ?>/img/news-thumb.png" alt="">
 							</div>
@@ -88,7 +88,7 @@ Template Name: ВИЭ
 								Биомасса
 							</div>
 						</div>
-						<div class="b_vie-solutions__item animate-puk" data-effect="fade" data-daley="1.1s">
+						<div class="b_vie-solutions__item animate-puk" data-effect="fade" data-delay="1.1s">
 							<div class="b_vie-solutions__item-img">
 								<img src="<?php bloginfo('template_url') ?>/img/news-thumb.png" alt="">
 							</div>
@@ -96,7 +96,7 @@ Template Name: ВИЭ
 								Ветровая энергия
 							</div>
 						</div>
-						<div class="b_vie-solutions__item animate-puk" data-effect="fade" data-daley="1.3s">
+						<div class="b_vie-solutions__item animate-puk" data-effect="fade" data-delay="1.3s">
 							<div class="b_vie-solutions__item-img">
 								<img src="<?php bloginfo('template_url') ?>/img/news-thumb.png" alt="">
 							</div>

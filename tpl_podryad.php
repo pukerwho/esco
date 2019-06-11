@@ -31,7 +31,7 @@ Template Name: Подрядные работы
 								<div class="b_podryad-welcome-list__item-title">
 									Промывка систем отопления
 								</div>
-								<a href="/#audit_building">
+								<a href="#">
 									<div class="esco-button">
 										Подробнее
 									</div>
@@ -46,7 +46,7 @@ Template Name: Подрядные работы
 								<div class="b_podryad-welcome-list__item-title">
 									Монтаж оборудования
 								</div>
-								<a href="/#audit_building">
+								<a href="#">
 									<div class="esco-button">
 										Подробнее
 									</div>
@@ -61,7 +61,7 @@ Template Name: Подрядные работы
 								<div class="b_podryad-welcome-list__item-title">
 									Общестроительные работы
 								</div>
-								<a href="/#audit_building">
+								<a href="#">
 									<div class="esco-button">
 										Подробнее
 									</div>

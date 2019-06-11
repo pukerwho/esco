@@ -85,7 +85,7 @@ Template Name: Контракты
 								<img src="<?php bloginfo('template_url') ?>/img/clients/client-01.png" alt="">
 							</div>
 							<div class="b_contract-what__step-text">
-								<b>Достичь определенного уровня  экономии</b> того или иного вида энергоресурса: тепло, электричество, вода
+								За определенную стоимость: <b>СУММА ЭСКО ДОГОВОРА</b>
 							</div>
 						</div>
 						<div class="b_contract-what__step animate-puk" data-effect="fade" data-delay="1.2s">
@@ -93,7 +93,7 @@ Template Name: Контракты
 								<img src="<?php bloginfo('template_url') ?>/img/clients/client-01.png" alt="">
 							</div>
 							<div class="b_contract-what__step-text">
-								<b>Достичь определенного уровня  экономии</b> того или иного вида энергоресурса: тепло, электричество, вода
+								Которая выплачивается в определенном периоде: <b>СРОК ЭСКО ДОГОВОРА</b>
 							</div>
 						</div>
 					</div>

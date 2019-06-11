@@ -31,6 +31,15 @@ $('.mobile-menu').on('click', function(e) {
   $('body').toggleClass('modal-open');
 });
 
+
+$('.mobile-cover').on('click', function(em){
+  em.preventDefault;
+  $(this).removeClass('mobile-cover__open')
+  $('.mobile-menu').removeClass('mobile-menu__active');
+  $('body').removeClass('modal-open');
+})
+
+
 if ($(document).width() < 992) {
   $(window).scroll(function(){
     var h_scroll = $(this).scrollTop();

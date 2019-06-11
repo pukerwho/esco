@@ -9148,12 +9148,12 @@ b {
         -webkit-transition: all 0.5s;
         -o-transition: all 0.5s;
         transition: all 0.5s; }
-  .header.light-header a {
+  .header.light-header .header__menu a {
     color: #494c4b;
     -webkit-transition: all 0.5s 0.3s;
     -o-transition: all 0.5s 0.3s;
     transition: all 0.5s 0.3s; }
-    .header.light-header a:hover {
+    .header.light-header .header__menu a:hover {
       background-color: #eaf5ef;
       -webkit-border-radius: 17.5px;
       border-radius: 17.5px;

@@ -9148,11 +9148,6 @@ a:hover {
     -webkit-transition: all 0.5s 0.3s;
     -o-transition: all 0.5s 0.3s;
     transition: all 0.5s 0.3s; }
-  .header.light-header .current_page_item a {
-    background-color: #eaf5ef;
-    -webkit-transition: all 0.5s 0.3s;
-    -o-transition: all 0.5s 0.3s;
-    transition: all 0.5s 0.3s; }
 
 @font-face {
   font-family: 'Helvetica-Bold';

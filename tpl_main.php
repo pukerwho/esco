@@ -47,9 +47,11 @@ Template Name: Main
 								<div class="b_uslugi-item__title">
 									Энергомодернизируем их активы
 								</div>
-								<div class="esco-button">
-									Подробнее
-								</div>	
+								<a href="#energoeffect">
+									<div class="esco-button">
+										Подробнее
+									</div>	
+								</a>
 							</div>
 						</div>
 						<div class="b_uslugi-item animate-puk" data-effect="fade" data-delay="1.2s">
@@ -145,9 +147,11 @@ Template Name: Main
 								<div class="b_energoeffect-item__text">
 									Энергосервисные контракты: эффективный инструмент оптимизации энергозатрат и модернизации энерго-инфраструктуры
 								</div>
-								<div class="esco-button">
-									Подробнее
-								</div>
+								<a href="<?php echo get_page_url('tpl_contract') ?>">
+									<div class="esco-button">
+										Подробнее
+									</div>
+								</a>
 							</div>
 						</div>
 						<div class="b_energoeffect-item animate-puk" data-effect="fade" data-delay="1.4s">

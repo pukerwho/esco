@@ -7,6 +7,12 @@ jQuery(document).ready(function($){
   $('.b_audit-welcome .esco-list__item').addClass('esco-fade');
   $('.b_audit-welcome .esco-detail-right').addClass('animate-active');
   $('.b_podryad-welcome .esco-detail-right').addClass('animate-active');
+  $('.b_contract-welcome .esco-detail-right').addClass('animate-active');
+  $('.b_contract-welcome__title').addClass('esco-fade');
+  $('.b_contract-welcome__description').addClass('esco-fade');
+  $('.b_contract-welcome__icons').addClass('esco-fade');
+  $('.b_contract-welcome .esco-line').addClass('esco-fade');
+  $('.b_contract-welcome__bottom').addClass('esco-fade');
 })
 
 //Плавный скролл

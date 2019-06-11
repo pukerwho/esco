@@ -9241,7 +9241,8 @@ a:hover {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 150px 0 50px 0; }
+  padding: 100px 0 50px 0;
+  margin-bottom: 50px; }
   .b_uslugi:after {
     content: '';
     width: 100%;
@@ -9259,11 +9260,9 @@ a:hover {
     color: #3c3c3c;
     font-family: 'Helvetica-Light';
     font-size: 36px;
-    letter-spacing: 0.8px;
-    line-height: 1.35;
     text-align: center;
     opacity: 0;
-    margin-bottom: 45px; }
+    margin-bottom: 40px; }
     .b_uslugi-title.animate-active {
       opacity: 1;
       -webkit-transition: all 0.4s;
@@ -9282,7 +9281,7 @@ a:hover {
     -webkit-transform: translateY(100%);
     -ms-transform: translateY(100%);
     transform: translateY(100%);
-    margin-bottom: 95px; }
+    margin-bottom: 70px; }
     .b_uslugi-description.animate-active {
       opacity: 1;
       -webkit-transform: translateY(0);
@@ -9292,7 +9291,7 @@ a:hover {
       -o-transition: all 0.8s 0.8s;
       transition: all 0.8s 0.8s; }
   .b_uslugi .esco-line {
-    margin-bottom: 55px; }
+    margin-bottom: 40px; }
   .b_uslugi-list {
     display: -webkit-box;
     display: -webkit-flex;

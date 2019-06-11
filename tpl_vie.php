@@ -41,7 +41,7 @@ Template Name: ВИЭ
 								<img src="<?php bloginfo('template_url') ?>/img/news-thumb.png" alt="">
 							</div>
 							<div class="b_vie-welcome__item-title">
-								Погодное регулирование
+								Очистка и балансировка системы отопления
 							</div>
 						</div>
 						<div class="b_vie-welcome__item">
@@ -49,7 +49,7 @@ Template Name: ВИЭ
 								<img src="<?php bloginfo('template_url') ?>/img/news-thumb.png" alt="">
 							</div>
 							<div class="b_vie-welcome__item-title">
-								Погодное регулирование
+								Энергомониторинг и энергоменеджмент
 							</div>
 						</div>
 						<div class="b_vie-welcome__item">
@@ -57,7 +57,7 @@ Template Name: ВИЭ
 								<img src="<?php bloginfo('template_url') ?>/img/news-thumb.png" alt="">
 							</div>
 							<div class="b_vie-welcome__item-title">
-								Погодное регулирование
+								Частичная/полная термомодернизация
 							</div>
 						</div>
 					</div>

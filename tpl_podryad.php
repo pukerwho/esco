@@ -44,7 +44,7 @@ Template Name: Подрядные работы
 							</div>
 							<div>
 								<div class="b_podryad-welcome-list__item-title">
-									Энергоаудит зданий и предприятий
+									Монтаж оборудования
 								</div>
 								<a href="/#audit_building">
 									<div class="esco-button">
@@ -59,7 +59,7 @@ Template Name: Подрядные работы
 							</div>
 							<div>
 								<div class="b_podryad-welcome-list__item-title">
-									Энергоаудит зданий и предприятий
+									Общестроительные работы
 								</div>
 								<a href="/#audit_building">
 									<div class="esco-button">

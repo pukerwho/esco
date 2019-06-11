@@ -7,7 +7,7 @@ Template Name: Подрядные работы
 <?php get_header(); ?>
 
 <section id="podryad">
-	<div class="b_podryad-welcome" data-section-name="light">
+	<div class="b_podryad-welcome puk-slide" data-section-name="light">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-8">

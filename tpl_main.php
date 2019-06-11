@@ -218,9 +218,11 @@ Template Name: Main
 								<div class="b_ingi-item__text">
 									Проектирование
 								</div>
-								<div class="esco-button">
-									Подробнее
-								</div>
+								<a href="<?php echo get_page_url('tpl_proect') ?>">
+									<div class="esco-button">
+										Подробнее
+									</div>
+								</a>
 							</div>
 						</div>
 						<div class="b_ingi-item animate-puk" data-effect="fade" data-delay="1.6s">

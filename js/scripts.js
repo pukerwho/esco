@@ -53,22 +53,23 @@ var checkFirstSlide = function(){
 }
 
 checkFirstSlide();
-
-$.scrollify({
-  section : ".puk-slide",
-  easing: "easeOutExpo",
-  updateHash: false,
-  before: function(i,panels) {
-    var ref = panels[i].attr("data-section-name");
-    console.log(ref);
-    if(ref==="dark") {
-      $(".header").removeClass("light-header");
-    }
-    if(ref==="light") {
-      $(".header").addClass("light-header");
-    }
-  },
-});
+if ($(document).width() > 760) {
+  $.scrollify({
+    section : ".puk-slide",
+    easing: "easeOutExpo",
+    updateHash: false,
+    before: function(i,panels) {
+      var ref = panels[i].attr("data-section-name");
+      console.log(ref);
+      if(ref==="dark") {
+        $(".header").removeClass("light-header");
+      }
+      if(ref==="light") {
+        $(".header").addClass("light-header");
+      }
+    },
+  });
+}
 
 function initialPosition() {
   var current = $.scrollify.current();

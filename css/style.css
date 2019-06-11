@@ -9211,7 +9211,6 @@ b {
     z-index: -1; }
   .b_audit-welcome-title {
     color: #3c3c3c;
-    font-family: Helvetica-Light;
     font-size: 36px;
     text-align: center;
     opacity: 0;
@@ -9223,7 +9222,6 @@ b {
       transition: all 0.5s 0.7s; }
   .b_audit-welcome-description {
     color: #3c3c3c;
-    font-family: Helvetica-Light;
     font-size: 18px;
     text-align: center;
     opacity: 0;
@@ -9293,21 +9291,18 @@ b {
     z-index: 1; }
   .b_audit-whyus__title {
     position: relative;
-    font-family: 'Helvetica-Medium';
     font-size: 36px;
     text-align: center;
     z-index: 2;
     margin-bottom: 40px; }
   .b_audit-whyus__subtitle {
     position: relative;
-    font-family: 'Helvetica-Light';
     font-size: 24px;
     text-align: center;
     z-index: 2;
     margin-bottom: 40px; }
   .b_audit-whyus__text {
     position: relative;
-    font-family: 'Helvetica-Light';
     font-size: 18px;
     border: solid 4px #ffffff;
     z-index: 2;
@@ -9315,7 +9310,6 @@ b {
     margin-bottom: 90px; }
   .b_audit-whyus__quote {
     position: relative;
-    font-family: 'Helvetica-Light';
     font-size: 24px;
     text-align: center;
     font-style: oblique;
@@ -9374,15 +9368,12 @@ b {
     overflow: hidden;
     z-index: -1; }
   .b_audit-building__title {
-    font-family: 'Helvetica-Medium';
     font-size: 36px;
     margin-bottom: 25px; }
   .b_audit-building__description {
-    font-family: 'Helvetica-Light';
     font-size: 18px;
     margin-bottom: 40px; }
   .b_audit-building__subtitle {
-    font-family: 'Helvetica-Light';
     font-size: 24px;
     text-align: center;
     margin-bottom: 60px; }
@@ -9419,7 +9410,6 @@ b {
       position: absolute;
       top: 0;
       left: 0;
-      font-family: 'Helvetica-Medium';
       font-size: 30px;
       -webkit-transform: translate(150%, -75%);
       -ms-transform: translate(150%, -75%);
@@ -9473,14 +9463,12 @@ b {
     z-index: 1; }
   .b_audit-teplo__title {
     position: relative;
-    font-family: 'Helvetica-Light';
     font-size: 36px;
     text-align: center;
     z-index: 2;
     margin-bottom: 60px; }
   .b_audit-teplo__description {
     position: relative;
-    font-family: 'Helvetica-Light';
     font-size: 24px;
     text-align: center;
     z-index: 2;
@@ -9500,12 +9488,10 @@ b {
     display: flex; }
     .b_audit-teplo__item-number {
       color: #93c01f;
-      font-family: 'Helvetica-Medium';
       font-size: 60px;
       line-height: 1;
       padding-right: 30px; }
     .b_audit-teplo__item-text {
-      font-family: 'Helvetica-Light';
       font-size: 18px; }
 .b_podryad-welcome {
   width: 100%;
@@ -9544,12 +9530,10 @@ b {
     overflow: hidden;
     z-index: -1; }
   .b_podryad-welcome__title {
-    font-family: 'Helvetica-Medium';
     font-size: 36px;
     text-align: center;
     margin-bottom: 30px; }
   .b_podryad-welcome__description {
-    font-family: 'Helvetica-Light';
     font-size: 18px;
     text-align: center;
     margin-bottom: 40px; }

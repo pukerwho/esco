@@ -131,3 +131,24 @@ function get_page_url($template_name) {
     }
     return get_bloginfo('url');
 }
+
+function my_custom_upload_mimes($mimes = array()) {
+    $mimes['svg'] = "image/svg+xml";
+    return $mimes;
+}
+
+add_action('upload_mimes', 'my_custom_upload_mimes');
+
+function my_login_logo() { ?>
+  <style type="text/css">
+    #login h1 a, .login h1 a {
+      background-image: url(<?php bloginfo('template_url') ?>/img/logo.png);
+      width: 100%;
+      height: 75px;
+      background-size: auto;
+      padding: 20px 0px;
+      background-position: center;
+    }
+  </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );

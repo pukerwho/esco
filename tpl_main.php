@@ -354,7 +354,7 @@ Template Name: Main
 		<div class="container">
 			<div class="row">
 				<?php
-				$custom_query_news = new WP_Query( array( 'post_type' => 'news') );
+				$custom_query_news = new WP_Query( array( 'post_type' => 'news', 'posts_per_page' => 5,) );
 				if ($custom_query_news->have_posts()) : while ($custom_query_news->have_posts()) : $custom_query_news->the_post(); ?>
 					<div class="col-md-4">
 						<div class="b_news-block animate-puk" data-effect="fade" data-delay="0.8s">
@@ -371,6 +371,18 @@ Template Name: Main
 							</a>
 						</div>
 					</div>
+					<?php
+					if (($custom_query_news->current_post + 1) === ($custom_query_news->post_count)): ?>
+						<div class="col-md-4">
+							<div class="b_news-morebutton">
+								<a href="<?php echo home_url(); ?>/news">
+									<div class="esco-button">
+										Посмотреть все новости
+									</div>	
+								</a>
+							</div>
+						</div>
+					<?php endif; ?>
 				<?php endwhile; endif; ?>
 			</div>
 		</div>

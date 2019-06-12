@@ -11768,7 +11768,7 @@ button.swiper-pagination-bullet {
     padding: 0 50px; }
 
   .b_uslugi-title {
-    font-size: 26px; }
+    font-size: 24px; }
   .b_uslugi-description {
     font-size: 21px; }
   .b_uslugi-list {
@@ -11787,7 +11787,7 @@ button.swiper-pagination-bullet {
     z-index: -1; }
 
   .b_approach-title {
-    font-size: 26px;
+    font-size: 24px;
     letter-spacing: 0;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -11800,7 +11800,7 @@ button.swiper-pagination-bullet {
   .b_energoeffect {
     padding: 120px 0 50px 0; }
     .b_energoeffect-title {
-      font-size: 26px; }
+      font-size: 24px; }
     .b_energoeffect-list {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -11824,7 +11824,7 @@ button.swiper-pagination-bullet {
   .b_ingi {
     padding: 120px 0 50px 0; }
     .b_ingi-title {
-      font-size: 26px;
+      font-size: 24px;
       margin-bottom: 40px; }
     .b_ingi-list {
       -webkit-box-orient: vertical;
@@ -11846,7 +11846,7 @@ button.swiper-pagination-bullet {
   .b_facts {
     padding: 120px 0 50px 0; }
     .b_facts-title {
-      font-size: 26px;
+      font-size: 24px;
       margin-bottom: 40px; }
     .b_facts-grid {
       -webkit-box-orient: vertical;
@@ -11906,13 +11906,13 @@ button.swiper-pagination-bullet {
       height: 375px; }
 
   .b_contract-welcome__title {
-    font-size: 26px; }
+    font-size: 24px; }
   .b_contract-welcome .esco-detail-right {
     z-index: -1; }
   .b_contract-what {
     padding: 120px 0; }
     .b_contract-what__title {
-      font-size: 26px; }
+      font-size: 24px; }
     .b_contract-what__subtitle {
       font-size: 18px; }
     .b_contract-what__steps {
@@ -11935,7 +11935,7 @@ button.swiper-pagination-bullet {
       .b_contract-what__step-text {
         text-align: center; }
   .b_contract-how__title {
-    font-size: 26px; }
+    font-size: 24px; }
   .b_contract-how__grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -11970,7 +11970,7 @@ button.swiper-pagination-bullet {
       margin-bottom: 0px; }
 
   .b_vie-welcome__title {
-    font-size: 26px; }
+    font-size: 24px; }
   .b_vie-welcome__list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -12003,7 +12003,7 @@ button.swiper-pagination-bullet {
   .b_audit-welcome {
     padding: 120px 0 50px 0; }
     .b_audit-welcome-title {
-      font-size: 26px; }
+      font-size: 24px; }
     .b_audit-welcome .esco-list {
       display: -webkit-box;
       display: -webkit-flex;
@@ -12021,7 +12021,7 @@ button.swiper-pagination-bullet {
         .b_audit-welcome .esco-list__item-title {
           font-size: 21px; }
   .b_audit-whyus__title {
-    font-size: 26px; }
+    font-size: 24px; }
   .b_audit-whyus__subtitle {
     font-size: 21px; }
   .b_audit-whyus__text {
@@ -12031,7 +12031,7 @@ button.swiper-pagination-bullet {
     .b_audit-whyus__quote-icon {
       width: 60px; }
   .b_audit-building__title {
-    font-size: 26px; }
+    font-size: 24px; }
   .b_audit-building__steps {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -12052,7 +12052,7 @@ button.swiper-pagination-bullet {
   .b_audit-building__detail {
     display: none; }
   .b_audit-teplo__title {
-    font-size: 26px; }
+    font-size: 24px; }
   .b_audit-teplo__description {
     font-size: 21px; }
   .b_audit-teplo__grid {
@@ -12071,7 +12071,7 @@ button.swiper-pagination-bullet {
       margin-bottom: 0; }
 
   .b_proect-welcome__title {
-    font-size: 26px; }
+    font-size: 24px; }
   .b_proect-welcome-list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -12088,7 +12088,7 @@ button.swiper-pagination-bullet {
         font-size: 21px; }
 
   .b_podryad-welcome__title {
-    font-size: 26px; }
+    font-size: 24px; }
   .b_podryad-welcome-list {
     display: -webkit-box;
     display: -webkit-flex;

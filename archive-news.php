@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="b_news">
+<div class="b_news puk-slide" data-section-name="light">
 	<div class="container">
 		<div class="row">
 			<?php 

@@ -39,6 +39,11 @@ $('.mobile-cover').on('click', function(em){
   $('body').removeClass('modal-open');
 })
 
+var LoadParallax = function(p){
+  $('.parallax-window').parallax();
+}
+
+LoadParallax();
 
 if ($(document).width() < 992) {
   $(window).scroll(function(){

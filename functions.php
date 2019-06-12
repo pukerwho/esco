@@ -49,6 +49,7 @@ function theme_name_scripts() {
     wp_enqueue_script( 'waypoints', get_template_directory_uri() . '/js/waypoints.min.js', '','',true);
     wp_enqueue_script( 'counterup', get_template_directory_uri() . '/js/counterup.min.js', '','',true);
     wp_enqueue_script( 'scrollify', get_template_directory_uri() . '/js/jquery.scrollify.js', '','',true);
+    wp_enqueue_script( 'parallax', get_template_directory_uri() . '/js/parallax.min.js', '','',true);
     wp_enqueue_script( 'animate-puk', get_template_directory_uri() . '/js/animate-puk.js','','',true);
     wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js', '','',true);
     wp_localize_script( 'loadmore', 'loadmore_params', array(

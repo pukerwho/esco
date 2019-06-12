@@ -11781,7 +11781,7 @@ button.swiper-pagination-bullet {
     margin-bottom: 50px; }
     .b_uslugi-item:last-child {
       margin-bottom: 0; }
-    .b_uslugi-item-title {
+    .b_uslugi-item__title {
       font-size: 21px; }
   .b_uslugi-detail {
     z-index: -1; }

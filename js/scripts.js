@@ -31,7 +31,6 @@ $('.mobile-menu').on('click', function(e) {
   $('body').toggleClass('modal-open');
 });
 
-
 $('.mobile-cover').on('click', function(em){
   em.preventDefault;
   $(this).removeClass('mobile-cover__open')

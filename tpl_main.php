@@ -7,10 +7,10 @@ Template Name: Main
 <?php get_header(); ?>
 
 <section id="welcome">
-	<div class="b_welcome puk-slide" style="background: url('<?php bloginfo('template_url') ?>/img/welcome-bg.png');background-position: 50%; background-size: cover;" data-slide-id="1" data-section-name="dark">
+	<div class="b_welcome puk-slide" style="background: url('<?php echo carbon_get_theme_option('crb_mainblock_photo') ?>');background-position: 50%; background-size: cover;" data-slide-id="1" data-section-name="dark">
 		<div class="b_welcome-absolute"></div>
 		<div class="b_welcome-text">
-			Помогая вам более эффективно использовать энергию, мы зарабатываем для вас деньги
+			<?php echo carbon_get_theme_option('crb_mainblock_text') ?>
 		</div>
 		<div class="scroll-down">
 			<img src="<?php bloginfo('template_url') ?>/img/down.png" alt="">
@@ -25,13 +25,13 @@ Template Name: Main
 				<div class="col-md-9">
 					<div class="animate-puk-mask">
 						<div class="b_uslugi-title animate-puk">
-							Мы создали ЭСКО ЮА с целью внедрения лучших мировых практик в сфере энергоэффективности и зеленых технологий в бюджетном и частных секторах
+							<?php echo carbon_get_theme_option('crb_uslugi_title') ?>
 						</div>
 					</div>
 					<div class="esco-line mx-auto"></div>
 					<div class="animate-puk-mask">
 						<div class="b_uslugi-description animate-puk">
-							Помогаем клиентам быть более эффективными в части использования различных видов энергии
+							<?php echo carbon_get_theme_option('crb_uslugi_description') ?>
 						</div>
 					</div>
 				</div>
@@ -41,11 +41,11 @@ Template Name: Main
 					<div class="b_uslugi-list">
 						<div class="b_uslugi-item animate-puk" data-effect="fade" data-delay="1s">
 							<div class="b_uslugi-item__img">
-								<img src="<?php bloginfo('template_url') ?>/img/energo_uslugi.png" alt="">
+								<img src="<?php echo carbon_get_theme_option('crb_uslugi_icon_one') ?>" alt="">
 							</div>
 							<div>
 								<div class="b_uslugi-item__title">
-									Энергомодернизируем их активы
+									<?php echo carbon_get_theme_option('crb_uslugi_text_one') ?>
 								</div>
 								<a href="#energoeffect">
 									<div class="esco-button">
@@ -56,11 +56,11 @@ Template Name: Main
 						</div>
 						<div class="b_uslugi-item animate-puk" data-effect="fade" data-delay="1.2s">
 							<div class="b_uslugi-item__img">
-								<img src="<?php bloginfo('template_url') ?>/img/ingiring-uslugi.png" alt="">
+								<img src="<?php echo carbon_get_theme_option('crb_uslugi_icon_two') ?>" alt="">
 							</div>
 							<div>
 								<div class="b_uslugi-item__title">
-									Оказываем инжиниринговые услуги
+									<?php echo carbon_get_theme_option('crb_uslugi_text_two') ?>
 								</div>
 								<a href="#ingi">
 									<div class="esco-button">
@@ -82,12 +82,12 @@ Template Name: Main
 </section>
 
 <section id="approach">
-	<div class="b_approach puk-slide" data-slide-id="3" data-section-name="dark" style="background: url('<?php bloginfo('template_url') ?>/img/approach-bg.png');background-position: 50%; background-size: cover;">
+	<div class="b_approach puk-slide" data-slide-id="3" data-section-name="dark" style="background: url('<?php echo carbon_get_theme_option('crb_aboutus_photo') ?>');background-position: 50%; background-size: cover;">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-9">
 					<div class="b_approach-title animate-puk" data-effect="fade" data-delay="0.8s">
-						ЭСКО ЮА: долгосрочный партнер в энергоэффективности, лидер рынка и инноватор
+						<?php echo carbon_get_theme_option('crb_aboutus_title') ?>
 					</div>
 					
 					<div class="b_approach-subtitle animate-puk" data-effect="fade" data-delay="0.9s">
@@ -99,19 +99,7 @@ Template Name: Main
 				<div class="col-md-7">
 					<div class="animate-puk-mask">
 						<div class="b_approach-text animate-puk" data-effect="fade" data-delay="1s">
-							Оказание энергосервисных услуг - это в первую очередь ДОЛГОСРОЧНЫЕ ПАРТНЕРСКИЕ ОТНОШЕНИЯ с нашими клиентами
-							<br><br>
-							Предлагаемые ЭСКО ЮА технические решения и поставляемое оборудования:
-							<br><br>
-							<li>
-								Инновационное.
-							</li>
-							<li>
-								Работает минимум 10 лет без капитальных ремонтов.
-							</li>
-							<li>
-								Является частью стратегии развития Заказчика.
-							</li>
+							<?php echo carbon_get_theme_option('crb_aboutus_text') ?>
 						</div>
 					</div>
 				</div>
@@ -141,11 +129,11 @@ Template Name: Main
 					<div class="b_energoeffect-list">
 						<div class="b_energoeffect-item animate-puk" data-effect="fade" data-delay="1.2s">
 							<div class="b_energoeffect-item__img">
-								<img src="<?php bloginfo('template_url') ?>/img/podriad.png" alt="">
+								<img src="<?php echo carbon_get_theme_option('crb_energo_icon_one') ?>" alt="">
 							</div>
 							<div class="b_energoeffect-item__content">
 								<div class="b_energoeffect-item__text">
-									Энергосервисные контракты: эффективный инструмент оптимизации энергозатрат и модернизации энерго-инфраструктуры
+									<?php echo carbon_get_theme_option('crb_energo_text_one') ?>
 								</div>
 								<a href="<?php echo get_page_url('tpl_contract') ?>">
 									<div class="esco-button">
@@ -156,11 +144,11 @@ Template Name: Main
 						</div>
 						<div class="b_energoeffect-item animate-puk" data-effect="fade" data-delay="1.4s">
 							<div class="b_energoeffect-item__img">
-								<img src="<?php bloginfo('template_url') ?>/img/podriad.png" alt="">
+								<img src="<?php echo carbon_get_theme_option('crb_energo_icon_two') ?>" alt="">
 							</div>
 							<div class="b_energoeffect-item__content">
 								<div class="b_energoeffect-item__text">
-									Использование возобновляемых источников энергии в энергоэффективности
+									<?php echo carbon_get_theme_option('crb_energo_text_two') ?>
 								</div>
 								<a href="<?php echo get_page_url('tpl_vie') ?>">
 									<div class="esco-button">

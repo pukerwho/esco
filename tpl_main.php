@@ -13,7 +13,9 @@ Template Name: Main
 			<?php echo carbon_get_theme_option('crb_mainblock_text') ?>
 		</div>
 		<div class="scroll-down">
-			<img src="<?php bloginfo('template_url') ?>/img/down.png" alt="">
+			<a href="#uslugi">
+				<img src="<?php bloginfo('template_url') ?>/img/down.png" alt="">
+			</a>
 		</div>
 	</div>
 </section>
@@ -106,7 +108,9 @@ Template Name: Main
 			</div>
 		</div>
 		<div class="scroll-down">
-			<img src="<?php bloginfo('template_url') ?>/img/down.png" alt="">
+			<a href="#energoeffect">
+				<img src="<?php bloginfo('template_url') ?>/img/down.png" alt="">
+			</a>
 		</div>
 	</div>
 </section>
@@ -308,20 +312,21 @@ Template Name: Main
 		<div class="container">
 			<div class="row">
 				<?php
-				$clients = carbon_get_theme_option( 'crb_clients' );
-				foreach ( $clients as $client ): ?>
-					<?php $client_i=0; $client_i++; $delay_i=$client_i/1.5 ?>
+				$custom_query_clients = new WP_Query( array( 'post_type' => 'clients', 'posts_per_page' => 7,) );
+				if ($custom_query_clients->have_posts()) : while ($custom_query_clients->have_posts()) : $custom_query_clients->the_post(); ?>
 					<div class="col-md-4 b_clients-col">
 						<div class="animate-puk" data-effect="fade" data-delay="<?php echo $delay_i ?>s">
-							<div class="b_clients-icon">
-								<img src="<?php echo $client['crb_clients_icon'] ?>" alt="">
-							</div>
-							<div class="b_clients-text">
-								<?php echo $client['crb_clients_title'] ?>
-							</div>
+							<a href="<?php echo get_permalink(); ?>">
+								<div class="b_clients-icon">
+									<img src="<?php echo carbon_get_the_post_meta('crb_client_icon') ?>" alt="">
+								</div>
+								<div class="b_clients-text">
+									<?php the_title(); ?>
+								</div>
+							</a>
 						</div>
 					</div>
-				<?php endforeach; ?>
+				<?php endwhile; endif; ?>
 			</div>
 		</div>
 		<div class="p-absolute">

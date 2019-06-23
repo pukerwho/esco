@@ -300,8 +300,9 @@ if touchScroll is false - update index
         scrollTime = currentScrollTime;
 
 
-        if(locked) {
-          return false;
+        if(locked) { 
+          e.preventDefault(); 
+          return false; 
         }
         if(delta<0) {
           if(index<heights.length-1) {

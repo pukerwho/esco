@@ -12,7 +12,7 @@ Template Name: ВИЭ
 			<div class="row justify-content-center">
 				<div class="col-md-10">
 					<div class="b_vie-welcome__title">
-						Использование возобновляемых источников энергии в энергоэффективности
+						<?php echo carbon_get_the_post_meta('crb_vie_main_title') ?>
 					</div>
 					<div class="esco-line"></div>
 				</div>
@@ -20,46 +20,25 @@ Template Name: ВИЭ
 			<div class="row justify-content-center">
 				<div class="col-md-8">
 					<div class="b_vie-welcome__description">
-						Каждый объект мы рассматриваем целостно, где все его элементы взаимосвязаны.
-						<br>Стараясь наилучшим образом использовать имеющиеся технические решения, мы комбинируем использование таких энергоэффективных инструментов как:
+						<?php echo carbon_get_the_post_meta('crb_vie_main_description') ?>
 					</div>
 				</div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-11">
 					<div class="b_vie-welcome__list">
-						<div class="b_vie-welcome__item">
-							<div class="b_vie-welcome__item-img">
-								<img src="<?php bloginfo('template_url') ?>/img/news-thumb.png" alt="">
+						<?php
+						$instruments = carbon_get_the_post_meta('crb_vie_instrum');
+						foreach( $instruments as $instrum ) :?>
+							<div class="b_vie-welcome__item">
+								<div class="b_vie-welcome__item-img">
+									<img src="<?php echo $instrum['crb_vie_instrum_photo'] ?>" alt="">
+								</div>
+								<div class="b_vie-welcome__item-title">
+									<?php echo $instrum['crb_vie_instrum_text'] ?>
+								</div>
 							</div>
-							<div class="b_vie-welcome__item-title">
-								Погодное регулирование
-							</div>
-						</div>
-						<div class="b_vie-welcome__item">
-							<div class="b_vie-welcome__item-img">
-								<img src="<?php bloginfo('template_url') ?>/img/news-thumb.png" alt="">
-							</div>
-							<div class="b_vie-welcome__item-title">
-								Очистка и балансировка системы отопления
-							</div>
-						</div>
-						<div class="b_vie-welcome__item">
-							<div class="b_vie-welcome__item-img">
-								<img src="<?php bloginfo('template_url') ?>/img/news-thumb.png" alt="">
-							</div>
-							<div class="b_vie-welcome__item-title">
-								Энергомониторинг и энергоменеджмент
-							</div>
-						</div>
-						<div class="b_vie-welcome__item">
-							<div class="b_vie-welcome__item-img">
-								<img src="<?php bloginfo('template_url') ?>/img/news-thumb.png" alt="">
-							</div>
-							<div class="b_vie-welcome__item-title">
-								Частичная/полная термомодернизация
-							</div>
-						</div>
+						<?php endforeach; ?>
 					</div>
 				</div>
 			</div>
@@ -73,37 +52,27 @@ Template Name: ВИЭ
 			<div class="row justify-content-center">
 				<div class="col-md-10">
 					<div class="b_vie-solutions__text animate-puk" data-effect="fade" data-daley="0.7s">
-						Опыт и реализованные проекты нашей команды в сфере тепловой и электрической генерации позволяет наилучшим образом подобрать решения в части достижения оптимальных параметров энергетического баланса объекта.
+						<?php echo carbon_get_the_post_meta('crb_vie_solutions_description') ?>
 					</div>
 				</div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-11">
 					<div class="b_vie-solutions__grid">
-						<div class="b_vie-solutions__item animate-puk" data-effect="fade" data-delay="0.9s">
-							<div class="b_vie-solutions__item-img">
-								<img src="<?php bloginfo('template_url') ?>/img/news-thumb.png" alt="">
+						<?php
+						$i=0;
+						$solutions = carbon_get_the_post_meta('crb_vie_solutions');
+						foreach( $solutions as $solution ) : ?>
+							<?php $i++; $i=$i/2 ?>
+							<div class="b_vie-solutions__item animate-puk" data-effect="fade" data-delay="<?php echo $i ?>s">
+								<div class="b_vie-solutions__item-img">
+									<img src="<?php echo $solution['crb_vie_solutions_photo'] ?>" alt="">
+								</div>
+								<div class="b_vie-solutions__item-title">
+									<?php echo $solution['crb_vie_solutions_text'] ?>
+								</div>
 							</div>
-							<div class="b_vie-solutions__item-title">
-								Биомасса
-							</div>
-						</div>
-						<div class="b_vie-solutions__item animate-puk" data-effect="fade" data-delay="1.1s">
-							<div class="b_vie-solutions__item-img">
-								<img src="<?php bloginfo('template_url') ?>/img/news-thumb.png" alt="">
-							</div>
-							<div class="b_vie-solutions__item-title">
-								Ветровая энергия
-							</div>
-						</div>
-						<div class="b_vie-solutions__item animate-puk" data-effect="fade" data-delay="1.3s">
-							<div class="b_vie-solutions__item-img">
-								<img src="<?php bloginfo('template_url') ?>/img/news-thumb.png" alt="">
-							</div>
-							<div class="b_vie-solutions__item-title">
-								Солнечная энергия
-							</div>
-						</div>
+						<?php endforeach; ?>
 					</div>
 				</div>
 			</div>

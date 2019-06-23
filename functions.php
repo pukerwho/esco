@@ -107,6 +107,30 @@ function create_post_type() {
             'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'comments' ),
         )
     );
+    register_post_type( 'clients',
+        array(
+            'labels' => array(
+                'name' => 'Клиенты',
+                'singular_name' => 'Клиент'
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'hierarchical' => true,
+            'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'comments' ),
+        )
+    );
+    register_post_type( 'uslugi',
+        array(
+            'labels' => array(
+                'name' => 'Инж.Услуги',
+                'singular_name' => 'Инж.Услуга'
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'hierarchical' => true,
+            'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'comments' ),
+        )
+    );
 }
 
 add_action( 'init', 'create_post_type' ); 

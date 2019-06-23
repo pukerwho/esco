@@ -2,20 +2,17 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<div class="p_news puk-slide" data-section-name="light">
+<div class="p_single puk-slide" data-section-name="light">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="p_news-img parallax-window" data-parallax data-parallax="scroll"  data-position="top" data-bleed="0" data-src="<?php echo get_the_post_thumbnail_url(); ?>"></div>
-				<!-- <div class="p_news-img parallax-window">
-					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
-				</div> -->
-				<div class="p_news-back">
+				<div class="p_single-img parallax-window" data-parallax data-parallax="scroll"  data-position="top" data-bleed="0" data-src="<?php echo get_the_post_thumbnail_url(); ?>"></div>
+				<div class="p_single-back">
 					<a href="<?php echo home_url(); ?>/news">
-						<div class="p_news-back__icon">
+						<div class="p_single-back__icon">
 							<img src="<?php bloginfo('template_url') ?>/img/reply.svg" alt="">
 						</div>
-						<div class="p_news-back__text">
+						<div class="p_single-back__text">
 							Назад к новостям
 						</div>
 					</a>
@@ -26,18 +23,18 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-md-9">
-				<div class="p_news-title">
+				<div class="p_single-title">
 					<?php the_title(); ?>	
 				</div>
 				<div class="esco-line"></div>
-				<div class="p_news-content">
+				<div class="p_single-content">
 					<?php the_content(); ?>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<div class="p_news-recent">
+				<div class="p_single-recent">
 					Другие новости
 				</div>
 				<div class="esco-line"></div>

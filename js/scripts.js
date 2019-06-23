@@ -98,6 +98,7 @@ if ($(document).width() > 760) {
     section : ".puk-slide",
     easing: "easeOutExpo",
     updateHash: false,
+    passive: false,
     before: function(i,panels) {
       var ref = panels[i].attr("data-section-name");
       console.log(ref);

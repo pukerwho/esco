@@ -12,7 +12,7 @@ Template Name: Контракты
 			<div class="row justify-content-center">
 				<div class="col-md-10">
 					<div class="b_contract-welcome__title">
-						Энергосервисные контракты: эффективный инструмент оптимизации энергозатрат и модернизации энерго-инфраструктуры
+						<?php echo carbon_get_the_post_meta('crb_contract_main_title') ?>
 					</div>
 					<div class="esco-line"></div>
 				</div>
@@ -20,7 +20,7 @@ Template Name: Контракты
 			<div class="row justify-content-center">
 				<div class="col-md-8">
 					<div class="b_contract-welcome__description">
-						Государственные, как и частные компании, сталкиваются перед необходимостью оптимизации энергозатрат в условиях дефицыта или отсутствия финансовых ресурсов в принципе
+						<?php echo carbon_get_the_post_meta('crb_contract_main_description') ?>
 					</div>
 				</div>
 			</div>
@@ -28,13 +28,13 @@ Template Name: Контракты
 				<div class="col-md-10">
 					<div class="b_contract-welcome__icons">
 						<div class="b_contract-welcome__icon">
-							<img src="<?php bloginfo('template_url') ?>/img/building.png" alt="">
+							<img src="<?php echo carbon_get_the_post_meta('crb_contract_main_icon_one') ?>" alt="">
 						</div>
 						<div class="b_contract-welcome__icon">
-							<img src="<?php bloginfo('template_url') ?>/img/cooperate.png" alt="">
+							<img src="<?php echo carbon_get_the_post_meta('crb_contract_main_icon_two') ?>" alt="">
 						</div>
 						<div class="b_contract-welcome__icon">
-							<img src="<?php bloginfo('template_url') ?>/img/contract.png" alt="">
+							<img src="<?php echo carbon_get_the_post_meta('crb_contract_main_icon_three') ?>" alt="">
 						</div>
 					</div>
 				</div>
@@ -42,8 +42,7 @@ Template Name: Контракты
 			<div class="row justify-content-center">
 				<div class="col-md-8">
 					<div class="b_contract-welcome__bottom">
-						Механизм Энергосервисных контрактов является эффективным инструментом оптимизации энергозатрат, как и модернизации энергитической инфраструктуры в целом без необходимости для Заказчика вкладывать/инвестировать средства. 
-						При этом, необходимые затраты оплачиваются за счет гарантированной экономии энергоресурса в будущем 
+						<?php echo carbon_get_the_post_meta('crb_contract_main_text') ?>
 					</div>
 				</div>
 			</div>
@@ -57,7 +56,7 @@ Template Name: Контракты
 </section>
 
 <section id="contract_what">
-	<div class="b_contract-what puk-slide" data-section-name="dark" style="background: url('<?php bloginfo('template_url') ?>/img/superhero.png');background-position: 50%; background-size: cover;">
+	<div class="b_contract-what puk-slide" data-section-name="dark" style="background: url('<?php echo carbon_get_the_post_meta('crb_contract_second_bg') ?>');background-position: 50%; background-size: cover;">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-7">
@@ -65,7 +64,7 @@ Template Name: Контракты
 						Что это означает
 					</div>
 					<div class="b_contract-what__subtitle animate-puk" data-effect="fade" data-delay="0.9s">
-						ЭСКО ЮА как инвестор берет на себя обязательства перед заказчиком
+						<?php echo carbon_get_the_post_meta('crb_contract_second_description') ?>
 					</div>
 				</div>
 			</div>
@@ -74,26 +73,26 @@ Template Name: Контракты
 					<div class="b_contract-what__steps">
 						<div class="b_contract-what__step animate-puk" data-effect="fade" data-delay="1s">
 							<div class="b_contract-what__step-icon">
-								<img src="<?php bloginfo('template_url') ?>/img/clients/client-01.png" alt="">
+								<img src="<?php echo carbon_get_the_post_meta('crb_contract_second_step_one_icon') ?>" alt="">
 							</div>
 							<div class="b_contract-what__step-text">
-								<b>Достичь определенного уровня  экономии</b> того или иного вида энергоресурса: тепло, электричество, вода
+								<?php echo carbon_get_the_post_meta('crb_contract_second_step_one_text') ?>
 							</div>
 						</div>
 						<div class="b_contract-what__step animate-puk" data-effect="fade" data-delay="1.1s">
 							<div class="b_contract-what__step-icon">
-								<img src="<?php bloginfo('template_url') ?>/img/clients/client-01.png" alt="">
+								<img src="<?php echo carbon_get_the_post_meta('crb_contract_second_step_two_icon') ?>" alt="">
 							</div>
 							<div class="b_contract-what__step-text">
-								За определенную стоимость: <b>СУММА ЭСКО ДОГОВОРА</b>
+								<?php echo carbon_get_the_post_meta('crb_contract_second_step_two_text') ?>
 							</div>
 						</div>
 						<div class="b_contract-what__step animate-puk" data-effect="fade" data-delay="1.2s">
 							<div class="b_contract-what__step-icon">
-								<img src="<?php bloginfo('template_url') ?>/img/clients/client-01.png" alt="">
+								<img src="<?php echo carbon_get_the_post_meta('crb_contract_second_step_three_icon') ?>" alt="">
 							</div>
 							<div class="b_contract-what__step-text">
-								Которая выплачивается в определенном периоде: <b>СРОК ЭСКО ДОГОВОРА</b>
+								<?php echo carbon_get_the_post_meta('crb_contract_second_step_three_text') ?>
 							</div>
 						</div>
 					</div>
@@ -103,17 +102,19 @@ Template Name: Контракты
 				<div class="col-md-9">
 					<div class="b_contract-what__bottom animate-puk" data-effect="fade" data-delay="1.4s">
 						<div class="b_contract-what__bottom-icon">
-							<img src="<?php bloginfo('template_url') ?>/img/clients/client-01.png" alt="">
+							<img src="<?php echo carbon_get_the_post_meta('crb_contract_second_notice_icon') ?>" alt="">
 						</div>
 						<div class="b_contract-what__bottom-text">
-							Важно: определенный процент от сэкономленного остается Заказчику, а вторая его часть (не менее 80% при работе с бюджетными учреждениями согласно законодательству) выплачивается Заказчиком ЭСКО ЮА в качестве платежа по ЭСКО Договору в течении срока и в рамках суммы ЭСКО Договора
+							<?php echo carbon_get_the_post_meta('crb_contract_second_notice_text') ?>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="scroll-down animate-puk" data-effect="fade" data-delay="1.6s">
-			<img src="<?php bloginfo('template_url') ?>/img/down.png" alt="">
+			<a href="#contract_how">
+				<img src="<?php bloginfo('template_url') ?>/img/down.png" alt="">
+			</a>
 		</div>
 	</div>
 </section>
@@ -137,10 +138,10 @@ Template Name: Контракты
 									01
 								</div>
 								<div class="b_contract-how__item-img">
-									<img src="<?php bloginfo('template_url') ?>/img/clients/client-01.png" alt="">
+									<img src="<?php echo carbon_get_the_post_meta('crb_contract_how_step_one_icon') ?>" alt="">
 								</div>
 								<div class="b_contract-how__item-text">
-									Энергетический аудит
+									<?php echo carbon_get_the_post_meta('crb_contract_how_step_one_text') ?>
 								</div>
 							</div>
 							<div class="b_contract-how__item animate-puk" data-effect="fade" data-delay="0.9s">
@@ -148,10 +149,10 @@ Template Name: Контракты
 									02
 								</div>
 								<div class="b_contract-how__item-img">
-									<img src="<?php bloginfo('template_url') ?>/img/clients/client-01.png" alt="">
+									<img src="<?php echo carbon_get_the_post_meta('crb_contract_how_step_two_icon') ?>" alt="">
 								</div>
 								<div class="b_contract-how__item-text">
-									Подписание ЭСКО Договора
+									<?php echo carbon_get_the_post_meta('crb_contract_how_step_two_text') ?>
 								</div>
 							</div>
 							<div class="b_contract-how__item animate-puk" data-effect="fade" data-delay="1s">
@@ -159,10 +160,10 @@ Template Name: Контракты
 									03
 								</div>
 								<div class="b_contract-how__item-img">
-									<img src="<?php bloginfo('template_url') ?>/img/clients/client-01.png" alt="">
+									<img src="<?php echo carbon_get_the_post_meta('crb_contract_how_step_three_icon') ?>" alt="">
 								</div>
 								<div class="b_contract-how__item-text">
-									Внедрение энергоэффективных мероприятий
+									<?php echo carbon_get_the_post_meta('crb_contract_how_step_three_text') ?>
 								</div>
 							</div>
 							<div class="b_contract-how__item animate-puk" data-effect="fade" data-delay="1.1s">
@@ -170,10 +171,10 @@ Template Name: Контракты
 									04
 								</div>
 								<div class="b_contract-how__item-img">
-									<img src="<?php bloginfo('template_url') ?>/img/clients/client-01.png" alt="">
+									<img src="<?php echo carbon_get_the_post_meta('crb_contract_how_step_four_icon') ?>" alt="">
 								</div>
 								<div class="b_contract-how__item-text">
-									Достижение экономии энергоресурса
+									<?php echo carbon_get_the_post_meta('crb_contract_how_step_four_text') ?>
 								</div>
 							</div>
 						</div>
@@ -181,7 +182,7 @@ Template Name: Контракты
 				</div>
 			</div>
 		</div>
-		<div class="b_contract-how__bottom" style="background: url('<?php bloginfo('template_url') ?>/img/superhero.png');background-position: 50%; background-size: cover;">
+		<div class="b_contract-how__bottom" style="background: url('<?php echo carbon_get_the_post_meta('crb_contract_zakon_bg') ?>');background-position: 50%; background-size: cover;">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -194,10 +195,10 @@ Template Name: Контракты
 					<div class="col-md-12">
 						<div class="b_contract-how__bottom-grid">
 							<div class="b_contract-how__bottom-item animate-puk" data-effect="fade" data-delay="1.5s">
-								<b>Для Распорядителей бюджетных средств</b> (к примеру, Управление образования, Университет национального уровня, Министерство обороны) законодательно отношения в сфере Энергосервиса в Украине регламентируются ЗУ №327- от прав 09.04.2015 «О внедрении новых инвестиционных возможностей, гарантирования прав и законных интересов субъектов предпринимательской деятельности для проведения масштабной энергомодернизации, а также другими нормативно-правовыми актами».
+								<?php echo carbon_get_the_post_meta('crb_contract_zakon_one') ?>
 							</div>
 							<div class="b_contract-how__bottom-item animate-puk" data-effect="fade" data-delay="1.6s">
-								<b>Для других субъектов хозяйстования</b> законодательно отношения в сфере Энергосервиса в Украине регламентируются хозяйственным кодексом Украины и другими соответствующими нормамивно-правовыми актами.
+								<?php echo carbon_get_the_post_meta('crb_contract_zakon_two') ?>
 							</div>
 						</div>
 					</div>

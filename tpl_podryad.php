@@ -16,58 +16,41 @@ Template Name: Подрядные работы
 					</div>
 					<div class="esco-line"></div>
 					<div class="b_podryad-welcome__description">
-						Государственные, как и частные компании, сталкиваются перед необходимостью осуществления оптимизации энергозатрат в условиях дефицита или отсутствия финансовых ресурсов в принципе.
+						<?php echo carbon_get_the_post_meta('crb_podryad_description') ?>
 					</div>
 				</div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-10">
 					<div class="b_podryad-welcome-list">
-						<div class="b_podryad-welcome-list__item">
-							<div class="b_podryad-welcome-list__item-img">
-								<img src="<?php bloginfo('template_url') ?>/img/energo_uslugi.png" alt="">
-							</div>
-							<div>
-								<div class="b_podryad-welcome-list__item-title">
-									Промывка систем отопления
+						<?php
+						$custom_query_podryad = new WP_Query( array( 
+							'post_type' => 'uslugi',
+							'meta_query' => array(
+								array(
+									'key'     => 'crb_uslugi_podryad',
+									'value'   => 'no',
+									'compare' => '=',
+								),
+							)
+						) );
+						if ($custom_query_podryad->have_posts()) : while ($custom_query_podryad->have_posts()) : $custom_query_podryad->the_post(); ?>
+							<div class="b_podryad-welcome-list__item">
+								<div class="b_podryad-welcome-list__item-img">
+									<img src="<?php echo carbon_get_the_post_meta('crb_uslugi_icon') ?>" alt="">
 								</div>
-								<a href="#">
-									<div class="esco-button">
-										Подробнее
+								<div>
+									<div class="b_podryad-welcome-list__item-title">
+										<?php the_title(); ?>
 									</div>
-								</a>
-							</div>
-						</div>
-						<div class="b_podryad-welcome-list__item">
-							<div class="b_podryad-welcome-list__item-img">
-								<img src="<?php bloginfo('template_url') ?>/img/energo_uslugi.png" alt="">
-							</div>
-							<div>
-								<div class="b_podryad-welcome-list__item-title">
-									Монтаж оборудования
+									<a href="<?php echo get_permalink(); ?>">
+										<div class="esco-button">
+											Подробнее
+										</div>
+									</a>
 								</div>
-								<a href="#">
-									<div class="esco-button">
-										Подробнее
-									</div>
-								</a>
 							</div>
-						</div>
-						<div class="b_podryad-welcome-list__item">
-							<div class="b_podryad-welcome-list__item-img">
-								<img src="<?php bloginfo('template_url') ?>/img/energo_uslugi.png" alt="">
-							</div>
-							<div>
-								<div class="b_podryad-welcome-list__item-title">
-									Общестроительные работы
-								</div>
-								<a href="#">
-									<div class="esco-button">
-										Подробнее
-									</div>
-								</a>
-							</div>
-						</div>
+						<?php endwhile; endif; ?>
 					</div>
 				</div>
 			</div>

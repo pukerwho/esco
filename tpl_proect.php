@@ -16,73 +16,41 @@ Template Name: Проектирование
 					</div>
 					<div class="esco-line"></div>
 					<div class="b_proect-welcome__description">
-						Государственные, как и частные компании, сталкиваются перед необходимостью осуществления оптимизации энергозатрат в условиях дефицита или отсутствия финансовых ресурсов в принципе.
+						<?php echo carbon_get_the_post_meta('crb_proect_description') ?>
 					</div>
 				</div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-10">
 					<div class="b_proect-welcome-list">
-						<div class="b_proect-welcome-list__item">
-							<div class="b_proect-welcome-list__item-img">
-								<img src="<?php bloginfo('template_url') ?>/img/energo_uslugi.png" alt="">
-							</div>
-							<div>
-								<div class="b_proect-welcome-list__item-title">
-									Индивидуальные тепловые пункты
+						<?php
+						$custom_query_proect = new WP_Query( array( 
+							'post_type' => 'uslugi',
+							'meta_query' => array(
+								array(
+									'key'     => 'crb_uslugi_proect',
+									'value'   => 'no',
+									'compare' => '=',
+								),
+							)
+						) );
+						if ($custom_query_proect->have_posts()) : while ($custom_query_proect->have_posts()) : $custom_query_proect->the_post(); ?>
+							<div class="b_proect-welcome-list__item">
+								<div class="b_proect-welcome-list__item-img">
+									<img src="<?php echo carbon_get_the_post_meta('crb_uslugi_icon') ?>" alt="">
 								</div>
-								<a href="#">
-									<div class="esco-button">
-										Подробнее
+								<div>
+									<div class="b_proect-welcome-list__item-title">
+										<?php the_title(); ?>
 									</div>
-								</a>
-							</div>
-						</div>
-						<div class="b_proect-welcome-list__item">
-							<div class="b_proect-welcome-list__item-img">
-								<img src="<?php bloginfo('template_url') ?>/img/energo_uslugi.png" alt="">
-							</div>
-							<div>
-								<div class="b_proect-welcome-list__item-title">
-									Узлы учета и системы автоматизации
+									<a href="<?php echo get_permalink(); ?>">
+										<div class="esco-button">
+											Подробнее
+										</div>
+									</a>
 								</div>
-								<a href="#">
-									<div class="esco-button">
-										Подробнее
-									</div>
-								</a>
 							</div>
-						</div>
-						<div class="b_proect-welcome-list__item">
-							<div class="b_proect-welcome-list__item-img">
-								<img src="<?php bloginfo('template_url') ?>/img/energo_uslugi.png" alt="">
-							</div>
-							<div>
-								<div class="b_proect-welcome-list__item-title">
-									Системы отопления
-								</div>
-								<a href="#">
-									<div class="esco-button">
-										Подробнее
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="b_proect-welcome-list__item">
-							<div class="b_proect-welcome-list__item-img">
-								<img src="<?php bloginfo('template_url') ?>/img/energo_uslugi.png" alt="">
-							</div>
-							<div>
-								<div class="b_proect-welcome-list__item-title">
-									Термомодернизация зданий
-								</div>
-								<a href="#">
-									<div class="esco-button">
-										Подробнее
-									</div>
-								</a>
-							</div>
-						</div>
+						<?php endwhile; endif; ?>
 					</div>
 				</div>
 			</div>

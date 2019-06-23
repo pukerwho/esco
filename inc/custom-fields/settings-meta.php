@@ -39,13 +39,7 @@ function crb_attach_theme_options() {
         Field::make( 'textarea', 'crb_contact_address', 'Адрес' ),
         Field::make( 'textarea', 'crb_contact_map', 'Карта (Iframe)' ),
     ) )
-    ->add_tab( __('Клиенты'), array(
-        Field::make( 'complex', 'crb_clients', 'Клиенты' )
-        ->add_fields( array(
-            Field::make( 'image', 'crb_clients_icon', 'Иконка' )->set_value_type( 'url'),
-            Field::make( 'text', 'crb_clients_title', 'Заголовок' ),
-        ))
-    ))
+    
     ->add_tab( __('Факты'), array(
         Field::make( 'text', 'crb_facts_years', 'лет на рынке' )->set_attribute( 'type', 'number' ),
         Field::make( 'text', 'crb_facts_projects', 'завершенных проекта' )->set_attribute( 'type', 'number' ),

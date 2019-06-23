@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="b_news puk-slide" data-section-name="light">
+<div class="p_single b_news puk-slide" data-section-name="light">
 	<div class="container">
 		<div class="row">
 			<?php 
@@ -12,15 +12,15 @@
 				) );
 			if ($custom_query_news->have_posts()) : while ($custom_query_news->have_posts()) : $custom_query_news->the_post(); ?>
 			  	<div class="col-md-4">
-						<div class="b_news-block">
-							<div class="b_news-thumb">
+						<div class="p_single-block">
+							<div class="p_single-thumb">
 								<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 							</div>
-							<div class="b_news-text">
+							<div class="p_single-text">
 								<?php echo wp_trim_words( get_the_content(), 20, '...' ); ?>
 							</div>
 							<a href="<?php echo get_permalink() ?>">
-								<div class="b_news-more">
+								<div class="p_single-more">
 									Читать новость полностью
 								</div>
 							</a>

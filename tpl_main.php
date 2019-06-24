@@ -7,10 +7,10 @@ Template Name: Main
 <?php get_header(); ?>
 
 <section id="welcome">
-	<div class="b_welcome puk-slide" style="background: url('<?php echo carbon_get_theme_option('crb_mainblock_photo') ?>');background-position: 50%; background-size: cover;" data-slide-id="1" data-section-name="dark">
+	<div class="b_welcome puk-slide" style="background: url('<?php echo carbon_get_the_post_meta('crb_mainblock_photo') ?>');background-position: 50%; background-size: cover;" data-slide-id="1" data-section-name="dark">
 		<div class="b_welcome-absolute"></div>
 		<div class="b_welcome-text">
-			<?php echo carbon_get_theme_option('crb_mainblock_text') ?>
+			<?php echo carbon_get_the_post_meta('crb_mainblock_text') ?>
 		</div>
 		<div class="scroll-down">
 			<a href="#uslugi">
@@ -27,13 +27,13 @@ Template Name: Main
 				<div class="col-md-9">
 					<div class="animate-puk-mask">
 						<div class="b_uslugi-title animate-puk">
-							<?php echo carbon_get_theme_option('crb_uslugi_title') ?>
+							<?php echo carbon_get_the_post_meta('crb_uslugi_title') ?>
 						</div>
 					</div>
 					<div class="esco-line mx-auto"></div>
 					<div class="animate-puk-mask">
 						<div class="b_uslugi-description animate-puk">
-							<?php echo carbon_get_theme_option('crb_uslugi_description') ?>
+							<?php echo carbon_get_the_post_meta('crb_uslugi_description') ?>
 						</div>
 					</div>
 				</div>
@@ -43,11 +43,11 @@ Template Name: Main
 					<div class="b_uslugi-list">
 						<div class="b_uslugi-item animate-puk" data-effect="fade" data-delay="1s">
 							<div class="b_uslugi-item__img">
-								<img src="<?php echo carbon_get_theme_option('crb_uslugi_icon_one') ?>" alt="">
+								<img src="<?php echo carbon_get_the_post_meta('crb_uslugi_icon_one') ?>" alt="">
 							</div>
 							<div>
 								<div class="b_uslugi-item__title">
-									<?php echo carbon_get_theme_option('crb_uslugi_text_one') ?>
+									<?php echo carbon_get_the_post_meta('crb_uslugi_text_one') ?>
 								</div>
 								<a href="#energoeffect">
 									<div class="esco-button">
@@ -58,11 +58,11 @@ Template Name: Main
 						</div>
 						<div class="b_uslugi-item animate-puk" data-effect="fade" data-delay="1.2s">
 							<div class="b_uslugi-item__img">
-								<img src="<?php echo carbon_get_theme_option('crb_uslugi_icon_two') ?>" alt="">
+								<img src="<?php echo carbon_get_the_post_meta('crb_uslugi_icon_two') ?>" alt="">
 							</div>
 							<div>
 								<div class="b_uslugi-item__title">
-									<?php echo carbon_get_theme_option('crb_uslugi_text_two') ?>
+									<?php echo carbon_get_the_post_meta('crb_uslugi_text_two') ?>
 								</div>
 								<a href="#ingi">
 									<div class="esco-button">
@@ -84,12 +84,12 @@ Template Name: Main
 </section>
 
 <section id="approach">
-	<div class="b_approach puk-slide" data-slide-id="3" data-section-name="dark" style="background: url('<?php echo carbon_get_theme_option('crb_aboutus_photo') ?>');background-position: 50%; background-size: cover;">
+	<div class="b_approach puk-slide" data-slide-id="3" data-section-name="dark" style="background: url('<?php echo carbon_get_the_post_meta('crb_aboutus_photo') ?>');background-position: 50%; background-size: cover;">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-9">
 					<div class="b_approach-title animate-puk" data-effect="fade" data-delay="0.8s">
-						<?php echo carbon_get_theme_option('crb_aboutus_title') ?>
+						<?php echo carbon_get_the_post_meta('crb_aboutus_title') ?>
 					</div>
 					
 					<div class="b_approach-subtitle animate-puk" data-effect="fade" data-delay="0.9s">
@@ -101,7 +101,7 @@ Template Name: Main
 				<div class="col-md-7">
 					<div class="animate-puk-mask">
 						<div class="b_approach-text animate-puk" data-effect="fade" data-delay="1s">
-							<?php echo carbon_get_theme_option('crb_aboutus_text') ?>
+							<?php echo carbon_get_the_post_meta('crb_aboutus_text') ?>
 						</div>
 					</div>
 				</div>
@@ -133,11 +133,11 @@ Template Name: Main
 					<div class="b_energoeffect-list">
 						<div class="b_energoeffect-item animate-puk" data-effect="fade" data-delay="1.2s">
 							<div class="b_energoeffect-item__img">
-								<img src="<?php echo carbon_get_theme_option('crb_energo_icon_one') ?>" alt="">
+								<img src="<?php echo carbon_get_the_post_meta('crb_energo_icon_one') ?>" alt="">
 							</div>
 							<div class="b_energoeffect-item__content">
 								<div class="b_energoeffect-item__text">
-									<?php echo carbon_get_theme_option('crb_energo_text_one') ?>
+									<?php echo carbon_get_the_post_meta('crb_energo_text_one') ?>
 								</div>
 								<a href="<?php echo get_page_url('tpl_contract') ?>">
 									<div class="esco-button">
@@ -148,11 +148,11 @@ Template Name: Main
 						</div>
 						<div class="b_energoeffect-item animate-puk" data-effect="fade" data-delay="1.4s">
 							<div class="b_energoeffect-item__img">
-								<img src="<?php echo carbon_get_theme_option('crb_energo_icon_two') ?>" alt="">
+								<img src="<?php echo carbon_get_the_post_meta('crb_energo_icon_two') ?>" alt="">
 							</div>
 							<div class="b_energoeffect-item__content">
 								<div class="b_energoeffect-item__text">
-									<?php echo carbon_get_theme_option('crb_energo_text_two') ?>
+									<?php echo carbon_get_the_post_meta('crb_energo_text_two') ?>
 								</div>
 								<a href="<?php echo get_page_url('tpl_vie') ?>">
 									<div class="esco-button">
@@ -317,11 +317,13 @@ Template Name: Main
 					<div class="col-md-4 b_clients-col">
 						<div class="animate-puk" data-effect="fade" data-delay="<?php echo $delay_i ?>s">
 							<a href="<?php echo get_permalink(); ?>">
-								<div class="b_clients-icon">
-									<img src="<?php echo carbon_get_the_post_meta('crb_client_icon') ?>" alt="">
-								</div>
-								<div class="b_clients-text">
-									<?php the_title(); ?>
+								<div class="b_clients-col-item">
+									<div class="b_clients-icon">
+										<img src="<?php echo carbon_get_the_post_meta('crb_client_icon') ?>" alt="">
+									</div>
+									<div class="b_clients-text">
+										<?php the_title(); ?>
+									</div>
 								</div>
 							</a>
 						</div>

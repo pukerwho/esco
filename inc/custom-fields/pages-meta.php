@@ -7,6 +7,30 @@ add_action( 'carbon_fields_register_fields', 'crb_page_theme_options' );
 function crb_page_theme_options() {
   Container::make( 'post_meta', 'More' )
     ->where( 'post_type', '=', 'page' )
+    ->where( 'post_template', '=', 'tpl_main.php' )
+    ->add_fields( array(
+        Field::make( 'separator', 'crb_separator_mainblock', 'Основной блок' ),
+        Field::make( 'image', 'crb_mainblock_photo', 'Картинка (на фон) для основного блока' )->set_value_type( 'url'),
+        Field::make( 'textarea', 'crb_mainblock_text', 'Текст для основного блока' ),
+        Field::make( 'separator', 'crb_separator_uslugi', 'Что мы делаем? Услуги' ),
+        Field::make( 'textarea', 'crb_uslugi_title', 'Основной текст для блока' ),
+        Field::make( 'text', 'crb_uslugi_description', 'Дополнительный текст для блока' ),
+        Field::make( 'image', 'crb_uslugi_icon_one', 'Иконка для УСЛУГИ №1' )->set_value_type( 'url'),
+        Field::make( 'text', 'crb_uslugi_text_one', 'Услуга #1' ),
+        Field::make( 'image', 'crb_uslugi_icon_two', 'Иконка для УСЛУГИ №2' )->set_value_type( 'url'),
+        Field::make( 'text', 'crb_uslugi_text_two', 'Услуга #2' ),
+        Field::make( 'separator', 'crb_separator_abousus', 'Блок О НАС' ),
+        Field::make( 'image', 'crb_aboutus_photo', 'Картинка (на фон) для блока' )->set_value_type( 'url'),
+        Field::make( 'textarea', 'crb_aboutus_title', 'Заголовок блока' ),
+        Field::make( 'rich_text', 'crb_aboutus_text', 'Наш подход' ),
+        Field::make( 'separator', 'crb_separator_energo', 'Энергоэффективные мероприятия и модернизация' ),
+        Field::make( 'image', 'crb_energo_icon_one', 'Иконка для УСЛУГИ №1' )->set_value_type( 'url'),
+        Field::make( 'text', 'crb_energo_text_one', 'Услуга #1' ),
+        Field::make( 'image', 'crb_energo_icon_two', 'Иконка для УСЛУГИ №2' )->set_value_type( 'url'),
+        Field::make( 'text', 'crb_energo_text_two', 'Услуга #2' ),
+    ) );
+  Container::make( 'post_meta', 'More' )
+    ->where( 'post_type', '=', 'page' )
     ->where( 'post_template', '=', 'tpl_energoaudit.php' )
     ->add_fields( array(
         Field::make( 'image', 'crb_energoaudit_icon', 'Иконка для главной страницы' )->set_value_type( 'url'),

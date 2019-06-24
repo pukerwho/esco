@@ -9,6 +9,7 @@ function crb_page_theme_options() {
     ->where( 'post_type', '=', 'page' )
     ->where( 'post_template', '=', 'tpl_energoaudit.php' )
     ->add_fields( array(
+        Field::make( 'image', 'crb_energoaudit_icon', 'Иконка для главной страницы' )->set_value_type( 'url'),
         Field::make( 'separator', 'crb_separator_energo_mainblock', 'Основной блок' ),
     	Field::make( 'text', 'crb_energoaudit_title', 'Заголовок' ),
         Field::make( 'textarea', 'crb_energoaudit_description', 'Небольшое описание' ),
@@ -48,6 +49,7 @@ function crb_page_theme_options() {
     ->where( 'post_type', '=', 'page' )
     ->where( 'post_template', '=', 'tpl_contract.php' )
     ->add_fields( array(
+        Field::make( 'image', 'crb_contract_icon', 'Иконка для главной страницы' )->set_value_type( 'url'),
         Field::make( 'separator', 'crb_separator_contract_main', 'Первый экран' ),
         Field::make( 'textarea', 'crb_contract_main_title', 'Заголовок' ),
         Field::make( 'textarea', 'crb_contract_main_description', 'Короткое описание' ),
@@ -87,6 +89,7 @@ function crb_page_theme_options() {
     ->where( 'post_type', '=', 'page' )
     ->where( 'post_template', '=', 'tpl_vie.php' )
     ->add_fields( array(
+      Field::make( 'image', 'crb_vie_icon', 'Иконка для главной страницы' )->set_value_type( 'url'),
       Field::make( 'separator', 'crb_separator_vie', 'Первый экран' ),
       Field::make( 'text', 'crb_vie_main_title', 'Заголовок' ),
       Field::make( 'textarea', 'crb_vie_main_description', 'Описание' ),
@@ -117,12 +120,14 @@ function crb_page_theme_options() {
     ->where( 'post_type', '=', 'page' )
     ->where( 'post_template', '=', 'tpl_proect.php' )
     ->add_fields( array(
+      Field::make( 'image', 'crb_proect_icon', 'Иконка для главной страницы' )->set_value_type( 'url'),
       Field::make( 'textarea', 'crb_proect_description', 'Описание' ),
     ) );
   Container::make( 'post_meta', 'More' )
     ->where( 'post_type', '=', 'page' )
     ->where( 'post_template', '=', 'tpl_podryad.php' )
     ->add_fields( array(
+      Field::make( 'image', 'crb_podryad_icon', 'Иконка для главной страницы' )->set_value_type( 'url'),
       Field::make( 'textarea', 'crb_podryad_description', 'Описание' ),
     ) );
 }

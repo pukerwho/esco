@@ -189,7 +189,18 @@ Template Name: Main
 					<div class="b_ingi-list">
 						<div class="b_ingi-item animate-puk" data-effect="fade" data-delay="1.2s">
 							<div class="b_ingi-item__img">
-								<img src="<?php bloginfo('template_url') ?>/img/energoaudit-icon.png" alt="">
+								<?php 
+			          $args_energo = [
+			              'post_type' => 'page',
+			              'fields' => 'ids',
+			              'nopaging' => true,
+			              'meta_key' => '_wp_page_template',
+			              'meta_value' => 'tpl_energoaudit.php'
+			          ];
+			          $pages_energo = get_posts( $args_energo );
+			          foreach ( $pages_energo as $page_energo ): ?>
+									<img src="<?php echo carbon_get_post_meta($page_energo, 'crb_energoaudit_icon') ?>" alt="">
+								<?php endforeach; ?>
 							</div>
 							<div class="b_ingi-item__content">
 								<div class="b_ingi-item__text">
@@ -204,7 +215,18 @@ Template Name: Main
 						</div>
 						<div class="b_ingi-item animate-puk" data-effect="fade" data-delay="1.4s">
 							<div class="b_ingi-item__img">
-								<img src="<?php bloginfo('template_url') ?>/img/proectirovanie.png" alt="">
+								<?php 
+			          $args_proect = [
+			              'post_type' => 'page',
+			              'fields' => 'ids',
+			              'nopaging' => true,
+			              'meta_key' => '_wp_page_template',
+			              'meta_value' => 'tpl_proect.php'
+			          ];
+			          $pages_proect = get_posts( $args_proect );
+			          foreach ( $pages_proect as $page_proect ): ?>
+									<img src="<?php echo carbon_get_post_meta($page_proect, 'crb_proect_icon') ?>" alt="">
+								<?php endforeach; ?>
 							</div>
 							<div class="b_ingi-item__content">
 								<div class="b_ingi-item__text">
@@ -219,7 +241,18 @@ Template Name: Main
 						</div>
 						<div class="b_ingi-item animate-puk" data-effect="fade" data-delay="1.6s">
 							<div class="b_ingi-item__img">
-								<img src="<?php bloginfo('template_url') ?>/img/podriad.png" alt="">
+								<?php 
+			          $args_podryad = [
+			              'post_type' => 'page',
+			              'fields' => 'ids',
+			              'nopaging' => true,
+			              'meta_key' => '_wp_page_template',
+			              'meta_value' => 'tpl_podryad.php'
+			          ];
+			          $pages_podryad = get_posts( $args_podryad );
+			          foreach ( $pages_podryad as $page_podryad ): ?>
+									<img src="<?php echo carbon_get_post_meta($page_podryad, 'crb_podryad_icon') ?>" alt="">
+								<?php endforeach; ?>
 							</div>
 							<div class="b_ingi-item__content">
 								<div class="b_ingi-item__text">
